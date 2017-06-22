@@ -9,7 +9,6 @@ ifeq ($(UNAME_S), Darwin)
 CFLAGS+=-stdlib=libstdc++
 endif
 FLAGS=`llvm-config --cxxflags --ldflags` -lclang $(CFLAGS)
-FLAGS=-lclang
 
 SAMPLE_DIR=samples
 SAMPLES:=$(wildcard $(SAMPLE_DIR)/*.cc)
